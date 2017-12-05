@@ -1,0 +1,191 @@
+// .header-wrapper{
+//   background: $header-bg;
+//   margin-bottom: $vmargin;
+// }
+
+
+
+.header-wrapper{
+background: linear-gradient(140deg, #1c9efe, #e61e57, #f32525);
+background-size: 600% 600%;
+
+-webkit-animation: AnimBG 43s ease infinite;
+-moz-animation: AnimBG 43s ease infinite;
+-o-animation: AnimBG 43s ease infinite;
+animation: AnimBG 43s ease infinite;
+
+@-webkit-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-moz-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-o-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@keyframes AnimBG { 
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+}
+.block-wrapper{
+  background: linear-gradient(140deg, #1c9efe, #e61e57, #f32525);
+background-size: 600% 600%;
+
+-webkit-animation: AnimBG 43s ease infinite;
+-moz-animation: AnimBG 43s ease infinite;
+-o-animation: AnimBG 43s ease infinite;
+animation: AnimBG 43s ease infinite;
+
+@-webkit-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-moz-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-o-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@keyframes AnimBG { 
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+}
+.blockstyle{
+  @include medium-large{
+    @include flex-center;
+    justify-content: space-between;
+  }
+  padding-top: 50px;
+  margin-bottom: -15px;
+  background: linear-gradient(140deg, #1c9efe, #e61e57, #f32525);
+background-size: 600% 600%;
+
+-webkit-animation: AnimBG 43s ease infinite;
+-moz-animation: AnimBG 43s ease infinite;
+-o-animation: AnimBG 43s ease infinite;
+animation: AnimBG 43s ease infinite;
+
+@-webkit-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-moz-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-o-keyframes AnimBG {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@keyframes AnimBG { 
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+}
+.text1{
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  font-size: 10px;
+  padding-bottom: 12px;
+  color: #ffff
+  
+}
+.header{
+  @include medium-large{
+    @include flex-center;
+    justify-content: space-between;
+  }
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.logo{
+  @include small{
+    text-align: center;
+  }
+  @include medium-large{
+    display: flex;
+    align-items: baseline;
+    .logo-text{
+      color: '#F5F5F5';
+      margin-right: $hmargin;
+    }
+    .logo-image{
+      margin-right: $hmargin;
+      img{
+        max-width: 150px;
+        max-height: 100px;
+      }
+    }
+  }
+  .tagline{
+    font-size: 1.35rem;
+  }
+}
+
+.nav{
+  @include flex-center;
+  @include small{
+    border-top: 1px solid $medium-grey;
+    margin-top: $vmargin;
+    padding-top: $vmargin;
+    justify-content: space-between;
+  }
+  @include medium-large{
+    .nav-user{
+      margin-right: $hmargin;
+    }
+  }
+  .nav-new-post{
+    @include small{
+
+    }
+  }
+}
+
+.users-account-menu, .users-menu{
+  .dropdown-toggle{
+    @include flex-center;
+    padding: 0;
+    background: none;
+    img{
+      margin-right: 5px;
+    }
+  }
+}
+
+.accounts-ui{
+  padding: $vmargin;
+  min-width: 240px;
+  .buttons{
+    .btn{
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: $vmargin;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
